@@ -9,11 +9,5 @@ public interface MessageType {
 	
 	int MESSAGE_RET_ONLINEUSERS=4;
 	
-	int MESSAGE_COMM_MES=5;
-
-	int MESSAGE_GROUP_MES=6;
-	
-	int MESSAGE_CLIENT_EXIT=7;
-	
-	int MESSAGE_FILE_MES=8;
+	int MESSAGE_CLIENT_EXIT=5;
 }

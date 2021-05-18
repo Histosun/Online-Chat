@@ -5,28 +5,25 @@ import java.io.Serializable;
 public class Message implements Serializable{
 	private static final long serialVersionUID=1L;
 	
-	private String sender;
-	private String receiver;
+	private int sender;
+	private int receiver;
 	private String content;
 	private String sendTime;
 	private int mesType;
 	
-	byte[] fileBytes;
-	
-	
-	public String getSender() {
+	public int getSender() {
 		return sender;
 	}
 	
-	public void setSender(String sender) {
+	public void setSender(int sender) {
 		this.sender = sender;
 	}
 	
-	public String getReceiver() {
+	public int getReceiver() {
 		return receiver;
 	}
 	
-	public void setReceiver(String receiver) {
+	public void setReceiver(int receiver) {
 		this.receiver = receiver;
 	}
 	
@@ -52,13 +49,5 @@ public class Message implements Serializable{
 	
 	public void setMesType(int mesType) {
 		this.mesType=mesType;
-	}
-	
-	public void setFileBytes(byte[] fileBytes) {
-		this.fileBytes=fileBytes;
-	}
-	
-	public byte[] getFileBytes() {
-		return fileBytes;
 	}
 }
